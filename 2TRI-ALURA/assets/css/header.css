@@ -17,10 +17,13 @@ padding: 0.5em;
  width: 24px;
  height: 24px;
  display: inline-block;
- background-image: url(assets/img/AluraBooks/Menu.svg);
+ background-image: url(../img/AluraBooks/Menu.svg);
  background-position: center;
  background-repeat: no-repeat;
 
+}
+.menu-checkbox{
+    display: none;
 }
 .menu-checkbox:checked ~ .menu-lista{
 display: block;
