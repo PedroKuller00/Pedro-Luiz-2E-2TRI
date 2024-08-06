@@ -1,0 +1,48 @@
+body{
+    background-color: var(--cor-de-fundo);
+}
+
+.cabecalho{
+display: flex;
+ justify-content: space-between; 
+    background-color: var(--branco) ;
+    align-items: center;
+}
+.container{
+margin: 0 20px;
+padding: 0.5em;
+}
+
+.menuzinho{
+ width: 24px;
+ height: 24px;
+ display: inline-block;
+ background-image: url(../img/AluraBooks/Menu.svg);
+ background-position: center;
+ background-repeat: no-repeat;
+
+}
+.menu-checkbox{
+    display: none;
+}
+.menu-checkbox:checked ~ .menu-lista{
+display: block;
+}
+.lista-titulo{
+    background-color: var(--branco);
+    color: var(--laranja);
+ }
+ .menu-lista{
+    display: none;
+    position: absolute;
+    width: 60vw;
+}
+.lista-item{
+    padding: 1em;
+    background-color: white;
+    color: orange;
+}
+
+
+
+
