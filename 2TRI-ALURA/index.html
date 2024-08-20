@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/star.css">
     <link rel="stylesheet" href="assets/css/header.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
    <header class="cabecalho">
@@ -43,19 +47,27 @@
   <h2 class="carrossel-titulo">
     Novos Lançamentos
   </h2>
-</section>
-<div class="swiper">
-  <div class="swiper-wrapper">
+  <div class="swiper">
+    <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="assets/img/AluraBooks/ApacheKafka.png" alt=""></div>
       <div class="swiper-slide"><img src="assets/img/AluraBooks/Liderança.png" alt=""></div>
       <div class="swiper-slide"><img src="assets/img/AluraBooks/Javascript.png" alt=""></div>
       <div class="swiper-slide"><img src="assets/img/AluraBooks/Guia Front-end.png" alt=""></div>
       <div class="swiper-slide"><img src="assets/img/AluraBooks/Portugol.png" alt=""></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
+</section>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    spaceBetween: 10,
+    slidesPerView: 3,
+  });
+</script>
 </body>
+
 </html>
